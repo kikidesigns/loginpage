@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Maria Garcia -->
+    <!-- Import a script file -->
+    <script src="LoginScript.js"></script>
+    <!-- Import a stylesheet-->
+    <link rel="stylesheet" type="text/css" href="LoginStyle.css">
+    <!-- Import a font -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+     <!-- Set the title of the HTML document to "House of Lions - Login". -->
+    <title>House of Lions - Login</title>
+  </head>
+  <body>
+    
+    <center>
+ 
+    <br>
+     <!-- Create a paragraph with an ID of "loginStatus" and the text "Status of Login". -->
+    <p id = "loginStatus"> Status of Login</p>
+ 
+    <div class="container">
+        <div class="console">
+          <code>
+            <p>
+                Enter Your Credentials
+            </p>  
+          </code>
+        </div>
+      </div>
+        
+    </form>
+    <div class="container">
+        <div class="console">
+          <code>
+            <!-- Create three input fields: "Code Name", "Guild", and "Badge Number". -->
+            <form id = "credSubmit" onsubmit = "return false">
+                Code Name: <input type = "text" id = "codeName"/> 
+                <br>
+                Guild: <input type ="text" id = "guild"/>
+                <br>
+                Badge Number: <input type = "number" id = "badgeNum"/>
+                   <!-- Create a submit button with the text "submit" and the function "checkCreds()" when clicked. -->
+                <input type = "submit" onclick = "checkCreds()"/>
+          </code>
+        </div>
+      </div>
+
+    </center>
+
+  </body>
+</html>
